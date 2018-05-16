@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79C4339F20ACDF1D00930307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4339E20ACDF1D00930307 /* AppDelegate.swift */; };
+		79C433A120ACDF1D00930307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433A020ACDF1D00930307 /* ViewController.swift */; };
+		79C433A420ACDF1D00930307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C433A220ACDF1D00930307 /* Main.storyboard */; };
+		79C433A620ACDF1F00930307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C433A520ACDF1F00930307 /* Assets.xcassets */; };
+		79C433A920ACDF1F00930307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C433A720ACDF1F00930307 /* LaunchScreen.storyboard */; };
+		79C433B420ACDF1F00930307 /* MyGymBagAlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433B320ACDF1F00930307 /* MyGymBagAlphaTests.swift */; };
+		79C433BF20ACDF1F00930307 /* MyGymBagAlphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433BE20ACDF1F00930307 /* MyGymBagAlphaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79C433B020ACDF1F00930307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79C4339320ACDF1D00930307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C4339A20ACDF1D00930307;
+			remoteInfo = MyGymBagAlpha;
+		};
+		79C433BB20ACDF1F00930307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79C4339320ACDF1D00930307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C4339A20ACDF1D00930307;
+			remoteInfo = MyGymBagAlpha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79C4339B20ACDF1D00930307 /* MyGymBagAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGymBagAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C4339E20ACDF1D00930307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79C433A020ACDF1D00930307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79C433A320ACDF1D00930307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79C433A520ACDF1F00930307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79C433A820ACDF1F00930307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79C433AA20ACDF1F00930307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79C433AF20ACDF1F00930307 /* MyGymBagAlphaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGymBagAlphaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C433B320ACDF1F00930307 /* MyGymBagAlphaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGymBagAlphaTests.swift; sourceTree = "<group>"; };
+		79C433B520ACDF1F00930307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79C433BA20ACDF1F00930307 /* MyGymBagAlphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGymBagAlphaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C433BE20ACDF1F00930307 /* MyGymBagAlphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGymBagAlphaUITests.swift; sourceTree = "<group>"; };
+		79C433C020ACDF1F00930307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79C4339820ACDF1D00930307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C433AC20ACDF1F00930307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C433B720ACDF1F00930307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79C4339220ACDF1D00930307 = {
+			isa = PBXGroup;
+			children = (
+				79C4339D20ACDF1D00930307 /* MyGymBagAlpha */,
+				79C433B220ACDF1F00930307 /* MyGymBagAlphaTests */,
+				79C433BD20ACDF1F00930307 /* MyGymBagAlphaUITests */,
+				79C4339C20ACDF1D00930307 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79C4339C20ACDF1D00930307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79C4339B20ACDF1D00930307 /* MyGymBagAlpha.app */,
+				79C433AF20ACDF1F00930307 /* MyGymBagAlphaTests.xctest */,
+				79C433BA20ACDF1F00930307 /* MyGymBagAlphaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79C4339D20ACDF1D00930307 /* MyGymBagAlpha */ = {
+			isa = PBXGroup;
+			children = (
+				79C4339E20ACDF1D00930307 /* AppDelegate.swift */,
+				79C433A020ACDF1D00930307 /* ViewController.swift */,
+				79C433A220ACDF1D00930307 /* Main.storyboard */,
+				79C433A520ACDF1F00930307 /* Assets.xcassets */,
+				79C433A720ACDF1F00930307 /* LaunchScreen.storyboard */,
+				79C433AA20ACDF1F00930307 /* Info.plist */,
+			);
+			path = MyGymBagAlpha;
+			sourceTree = "<group>";
+		};
+		79C433B220ACDF1F00930307 /* MyGymBagAlphaTests */ = {
+			isa = PBXGroup;
+			children = (
+				79C433B320ACDF1F00930307 /* MyGymBagAlphaTests.swift */,
+				79C433B520ACDF1F00930307 /* Info.plist */,
+			);
+			path = MyGymBagAlphaTests;
+			sourceTree = "<group>";
+		};
+		79C433BD20ACDF1F00930307 /* MyGymBagAlphaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79C433BE20ACDF1F00930307 /* MyGymBagAlphaUITests.swift */,
+				79C433C020ACDF1F00930307 /* Info.plist */,
+			);
+			path = MyGymBagAlphaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79C4339A20ACDF1D00930307 /* MyGymBagAlpha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79C433C320ACDF1F00930307 /* Build configuration list for PBXNativeTarget "MyGymBagAlpha" */;
+			buildPhases = (
+				79C4339720ACDF1D00930307 /* Sources */,
+				79C4339820ACDF1D00930307 /* Frameworks */,
+				79C4339920ACDF1D00930307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyGymBagAlpha;
+			productName = MyGymBagAlpha;
+			productReference = 79C4339B20ACDF1D00930307 /* MyGymBagAlpha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79C433AE20ACDF1F00930307 /* MyGymBagAlphaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79C433C620ACDF1F00930307 /* Build configuration list for PBXNativeTarget "MyGymBagAlphaTests" */;
+			buildPhases = (
+				79C433AB20ACDF1F00930307 /* Sources */,
+				79C433AC20ACDF1F00930307 /* Frameworks */,
+				79C433AD20ACDF1F00930307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79C433B120ACDF1F00930307 /* PBXTargetDependency */,
+			);
+			name = MyGymBagAlphaTests;
+			productName = MyGymBagAlphaTests;
+			productReference = 79C433AF20ACDF1F00930307 /* MyGymBagAlphaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79C433B920ACDF1F00930307 /* MyGymBagAlphaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79C433C920ACDF1F00930307 /* Build configuration list for PBXNativeTarget "MyGymBagAlphaUITests" */;
+			buildPhases = (
+				79C433B620ACDF1F00930307 /* Sources */,
+				79C433B720ACDF1F00930307 /* Frameworks */,
+				79C433B820ACDF1F00930307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79C433BC20ACDF1F00930307 /* PBXTargetDependency */,
+			);
+			name = MyGymBagAlphaUITests;
+			productName = MyGymBagAlphaUITests;
+			productReference = 79C433BA20ACDF1F00930307 /* MyGymBagAlphaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79C4339320ACDF1D00930307 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = TGYA;
+				TargetAttributes = {
+					79C4339A20ACDF1D00930307 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					79C433AE20ACDF1F00930307 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 79C4339A20ACDF1D00930307;
+					};
+					79C433B920ACDF1F00930307 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 79C4339A20ACDF1D00930307;
+					};
+				};
+			};
+			buildConfigurationList = 79C4339620ACDF1D00930307 /* Build configuration list for PBXProject "MyGymBagAlpha" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79C4339220ACDF1D00930307;
+			productRefGroup = 79C4339C20ACDF1D00930307 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79C4339A20ACDF1D00930307 /* MyGymBagAlpha */,
+				79C433AE20ACDF1F00930307 /* MyGymBagAlphaTests */,
+				79C433B920ACDF1F00930307 /* MyGymBagAlphaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79C4339920ACDF1D00930307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C433A920ACDF1F00930307 /* LaunchScreen.storyboard in Resources */,
+				79C433A620ACDF1F00930307 /* Assets.xcassets in Resources */,
+				79C433A420ACDF1D00930307 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C433AD20ACDF1F00930307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C433B820ACDF1F00930307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79C4339720ACDF1D00930307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C433A120ACDF1D00930307 /* ViewController.swift in Sources */,
+				79C4339F20ACDF1D00930307 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C433AB20ACDF1F00930307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C433B420ACDF1F00930307 /* MyGymBagAlphaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C433B620ACDF1F00930307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C433BF20ACDF1F00930307 /* MyGymBagAlphaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79C433B120ACDF1F00930307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79C4339A20ACDF1D00930307 /* MyGymBagAlpha */;
+			targetProxy = 79C433B020ACDF1F00930307 /* PBXContainerItemProxy */;
+		};
+		79C433BC20ACDF1F00930307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79C4339A20ACDF1D00930307 /* MyGymBagAlpha */;
+			targetProxy = 79C433BB20ACDF1F00930307 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79C433A220ACDF1D00930307 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79C433A320ACDF1D00930307 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79C433A720ACDF1F00930307 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79C433A820ACDF1F00930307 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79C433C120ACDF1F00930307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79C433C220ACDF1F00930307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79C433C420ACDF1F00930307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGymBagAlpha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TGYA.MyGymBagAlpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79C433C520ACDF1F00930307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGymBagAlpha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TGYA.MyGymBagAlpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79C433C720ACDF1F00930307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGymBagAlphaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TGYA.MyGymBagAlphaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGymBagAlpha.app/MyGymBagAlpha";
+			};
+			name = Debug;
+		};
+		79C433C820ACDF1F00930307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGymBagAlphaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TGYA.MyGymBagAlphaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGymBagAlpha.app/MyGymBagAlpha";
+			};
+			name = Release;
+		};
+		79C433CA20ACDF1F00930307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGymBagAlphaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TGYA.MyGymBagAlphaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGymBagAlpha;
+			};
+			name = Debug;
+		};
+		79C433CB20ACDF1F00930307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGymBagAlphaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TGYA.MyGymBagAlphaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGymBagAlpha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79C4339620ACDF1D00930307 /* Build configuration list for PBXProject "MyGymBagAlpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C433C120ACDF1F00930307 /* Debug */,
+				79C433C220ACDF1F00930307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79C433C320ACDF1F00930307 /* Build configuration list for PBXNativeTarget "MyGymBagAlpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C433C420ACDF1F00930307 /* Debug */,
+				79C433C520ACDF1F00930307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79C433C620ACDF1F00930307 /* Build configuration list for PBXNativeTarget "MyGymBagAlphaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C433C720ACDF1F00930307 /* Debug */,
+				79C433C820ACDF1F00930307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79C433C920ACDF1F00930307 /* Build configuration list for PBXNativeTarget "MyGymBagAlphaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C433CA20ACDF1F00930307 /* Debug */,
+				79C433CB20ACDF1F00930307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79C4339320ACDF1D00930307 /* Project object */;
+}
