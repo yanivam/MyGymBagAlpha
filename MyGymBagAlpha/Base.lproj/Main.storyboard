@@ -46,6 +46,7 @@
                     </view>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="687" y="33"/>
         </scene>
         <!--QuestionnaireVC-->
         <scene sceneID="QRo-jP-CJU">
@@ -58,44 +59,75 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-e4-rF6">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Quistionnare" id="G2k-av-lpk"/>
+                                    <navigationItem title="Quistionnare" id="G2k-av-lpk">
+                                        <barButtonItem key="rightBarButtonItem" id="rbY-T9-08O">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qgh-M3-L1z">
+                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <segue destination="7aT-Qu-xe7" kind="show" identifier="suggestionSegue" id="5Wb-LN-pPJ"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-z7-SgL">
-                                <rect key="frame" x="0.0" y="207" width="375" height="460"/>
+                                <rect key="frame" x="25" y="157" width="325" height="460"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="swF-FK-j5r">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="29"/>
-                                        <segments>
-                                            <segment title="Male"/>
-                                            <segment title="Female"/>
-                                        </segments>
-                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uQT-TM-pVA">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Sex:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFB-1Z-Kqz">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="swF-FK-j5r">
+                                                <rect key="frame" x="162.5" y="0.0" width="162.5" height="29"/>
+                                                <segments>
+                                                    <segment title="Male"/>
+                                                    <segment title="Female"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="sexSwitched:" destination="0Zj-In-bZl" eventType="valueChanged" id="mKw-4A-tUW"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rds-26-0pD">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                                        <rect key="frame" x="0.0" y="28" width="325" height="216"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Group:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qju-i6-awQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="216"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="216"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-9m-fUP">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="216"/>
+                                                <rect key="frame" x="162.5" y="0.0" width="162.5" height="216"/>
                                             </pickerView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nn9-Ga-cSA">
-                                        <rect key="frame" x="0.0" y="244" width="375" height="216"/>
+                                        <rect key="frame" x="0.0" y="244" width="325" height="216"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Visits to Gym:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8j-Ir-ybV">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="216"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8j-Ir-ybV">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="216"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Average Visits to Gym:">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhV-6v-6kJ">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="216"/>
+                                                <rect key="frame" x="162.5" y="0.0" width="162.5" height="216"/>
                                             </pickerView>
                                         </subviews>
                                     </stackView>
@@ -104,22 +136,71 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NRa-e4-rF6" firstAttribute="trailing" secondItem="dmr-ss-4Vc" secondAttribute="trailing" id="Azq-TH-Wqe"/>
-                            <constraint firstItem="Cl0-z7-SgL" firstAttribute="trailing" secondItem="NRa-e4-rF6" secondAttribute="trailing" id="Dhz-U9-i80"/>
-                            <constraint firstItem="dmr-ss-4Vc" firstAttribute="bottom" secondItem="Cl0-z7-SgL" secondAttribute="bottom" id="VXb-W3-jSd"/>
-                            <constraint firstItem="NRa-e4-rF6" firstAttribute="top" secondItem="dmr-ss-4Vc" secondAttribute="top" id="Vx8-Wj-4NV"/>
-                            <constraint firstItem="Cl0-z7-SgL" firstAttribute="trailing" secondItem="dmr-ss-4Vc" secondAttribute="trailing" id="XqG-uS-V01"/>
-                            <constraint firstItem="NRa-e4-rF6" firstAttribute="leading" secondItem="dmr-ss-4Vc" secondAttribute="leading" id="Yx3-de-yAc"/>
-                            <constraint firstItem="Cl0-z7-SgL" firstAttribute="leading" secondItem="BHr-lG-WCH" secondAttribute="leading" id="Zjd-Yp-Zgz"/>
-                            <constraint firstItem="dmr-ss-4Vc" firstAttribute="bottom" secondItem="Cl0-z7-SgL" secondAttribute="bottom" id="g9m-Xi-Kvh"/>
-                            <constraint firstItem="Cl0-z7-SgL" firstAttribute="trailing" secondItem="NRa-e4-rF6" secondAttribute="trailing" id="h9q-ca-gF1"/>
+                            <constraint firstAttribute="trailing" secondItem="Cl0-z7-SgL" secondAttribute="trailing" constant="25" id="6hE-CC-cDP"/>
+                            <constraint firstItem="NRa-e4-rF6" firstAttribute="centerX" secondItem="dmr-ss-4Vc" secondAttribute="centerX" id="G5u-Ja-uU6"/>
+                            <constraint firstItem="NRa-e4-rF6" firstAttribute="leading" secondItem="dmr-ss-4Vc" secondAttribute="leading" id="OnM-1w-T3F"/>
+                            <constraint firstItem="NRa-e4-rF6" firstAttribute="trailing" secondItem="dmr-ss-4Vc" secondAttribute="trailing" id="XEa-2h-CH3"/>
+                            <constraint firstItem="Cl0-z7-SgL" firstAttribute="leading" secondItem="dmr-ss-4Vc" secondAttribute="leading" constant="25" id="YeQ-N5-yD8"/>
+                            <constraint firstItem="NRa-e4-rF6" firstAttribute="top" secondItem="dmr-ss-4Vc" secondAttribute="top" id="dCH-c6-egx"/>
+                            <constraint firstItem="dmr-ss-4Vc" firstAttribute="bottom" secondItem="Cl0-z7-SgL" secondAttribute="bottom" constant="50" id="vtq-yT-qdQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dmr-ss-4Vc"/>
                     </view>
+                    <connections>
+                        <outlet property="agePicker" destination="PJf-9m-fUP" id="k7B-Ce-4V3"/>
+                        <outlet property="numVisitPicker" destination="jhV-6v-6kJ" id="UEp-gm-YxP"/>
+                        <outlet property="sexPicker" destination="swF-FK-j5r" id="4cr-Mv-0aG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ch-b2-jJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1581.5999999999999" y="32.833583208395808"/>
+        </scene>
+        <!--SuggestionVC-->
+        <scene sceneID="n8t-vl-faz">
+            <objects>
+                <viewController id="7aT-Qu-xe7" customClass="SuggestionVC" customModule="MyGymBagAlpha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Uc-U4-N9j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R3t-q9-aFH">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkOutCell" id="P0n-GX-0rm">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P0n-GX-0rm" id="QZR-se-QPv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1r8-4b-h9o">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Suggestions" id="smO-Tk-zrs"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1r8-4b-h9o" firstAttribute="centerX" secondItem="q0S-OS-b1c" secondAttribute="centerX" id="6IC-VH-7Aa"/>
+                            <constraint firstItem="1r8-4b-h9o" firstAttribute="leading" secondItem="R3t-q9-aFH" secondAttribute="leading" id="8PX-NP-1gi"/>
+                            <constraint firstItem="R3t-q9-aFH" firstAttribute="bottom" secondItem="q0S-OS-b1c" secondAttribute="bottom" id="WPg-Xi-In8"/>
+                            <constraint firstItem="R3t-q9-aFH" firstAttribute="top" secondItem="1r8-4b-h9o" secondAttribute="bottom" constant="2" id="Y0N-PB-ss8"/>
+                            <constraint firstItem="1r8-4b-h9o" firstAttribute="top" secondItem="q0S-OS-b1c" secondAttribute="top" id="a91-x0-GMr"/>
+                            <constraint firstItem="R3t-q9-aFH" firstAttribute="trailing" secondItem="q0S-OS-b1c" secondAttribute="trailing" id="vb1-ll-5ZS"/>
+                            <constraint firstItem="R3t-q9-aFH" firstAttribute="leading" secondItem="q0S-OS-b1c" secondAttribute="leading" id="wBJ-L3-YUe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q0S-OS-b1c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRO-Dq-gfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477.5999999999999" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>

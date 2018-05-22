@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? QuestionnaireVC {} else {return}
+        
     }
 
 }
