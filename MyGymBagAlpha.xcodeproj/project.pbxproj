@@ -16,6 +16,7 @@
 		79C433BF20ACDF1F00930307 /* MyGymBagAlphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433BE20ACDF1F00930307 /* MyGymBagAlphaUITests.swift */; };
 		79C433CD20ACE65600930307 /* QuestionnaireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433CC20ACE65600930307 /* QuestionnaireVC.swift */; };
 		79C433CF20B358CC00930307 /* SuggestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433CE20B358CC00930307 /* SuggestionVC.swift */; };
+		79C433D120B5ADA100930307 /* CustomWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433D020B5ADA100930307 /* CustomWorkoutCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		79C433C020ACDF1F00930307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79C433CC20ACE65600930307 /* QuestionnaireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireVC.swift; sourceTree = "<group>"; };
 		79C433CE20B358CC00930307 /* SuggestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionVC.swift; sourceTree = "<group>"; };
+		79C433D020B5ADA100930307 /* CustomWorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWorkoutCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				79C433A020ACDF1D00930307 /* ViewController.swift */,
 				79C433CC20ACE65600930307 /* QuestionnaireVC.swift */,
 				79C433CE20B358CC00930307 /* SuggestionVC.swift */,
+				79C433D020B5ADA100930307 /* CustomWorkoutCell.swift */,
 				79C433A220ACDF1D00930307 /* Main.storyboard */,
 				79C433A520ACDF1F00930307 /* Assets.xcassets */,
 				79C433A720ACDF1F00930307 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				79C433CD20ACE65600930307 /* QuestionnaireVC.swift in Sources */,
 				79C433CF20B358CC00930307 /* SuggestionVC.swift in Sources */,
 				79C4339F20ACDF1D00930307 /* AppDelegate.swift in Sources */,
+				79C433D120B5ADA100930307 /* CustomWorkoutCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
