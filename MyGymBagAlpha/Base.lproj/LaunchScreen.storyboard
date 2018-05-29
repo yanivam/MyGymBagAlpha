@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Gym Bag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYY-0D-7gU">
-                                <rect key="frame" x="78" y="319.5" width="219" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Gym Bag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyX-Xz-CWT">
+                                <rect key="frame" x="78" y="309.5" width="219" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,8 +27,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.87058823529999996" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gYY-0D-7gU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OEF-Dr-QNK"/>
-                            <constraint firstItem="gYY-0D-7gU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="R2P-cD-gq0"/>
+                            <constraint firstItem="yyX-Xz-CWT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7Lc-rL-g9j"/>
+                            <constraint firstItem="yyX-Xz-CWT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="izG-Aw-dLl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

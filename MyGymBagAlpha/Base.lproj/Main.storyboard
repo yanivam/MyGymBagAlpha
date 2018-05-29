@@ -117,6 +117,7 @@
                         <viewLayoutGuide key="safeArea" id="dmr-ss-4Vc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Questionnaire" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="lkk-zq-VZJ">
+                        <barButtonItem key="leftBarButtonItem" id="nfz-SP-VzI"/>
                         <barButtonItem key="rightBarButtonItem" id="rbY-T9-08O">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qgh-M3-L1z">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -244,6 +245,7 @@
         <!--Navigation Controller-->
         <scene sceneID="pys-MP-fmw">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0My-GC-ZGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sBp-HP-NUU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Daf-M5-wNY">
@@ -255,7 +257,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="be2-3w-qy0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0My-GC-ZGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="685.60000000000002" y="32.833583208395808"/>
         </scene>

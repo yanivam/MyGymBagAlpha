@@ -35,7 +35,7 @@ extension SuggestionVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : CustomWorkoutCell = tableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath) as! CustomWorkoutCell
         
-        cell.customView.layer.cornerRadius = cell.customView.frame.height / 2
+        cell.customView.layer.cornerRadius = cell.customView.frame.height / 4
         cell.workoutTitle.text = workouts[indexPath.row]
         cell.descriptionLabel.text = workoutDescription[indexPath.row]
         
