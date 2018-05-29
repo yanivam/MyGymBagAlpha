@@ -13,7 +13,7 @@ class QuestionnaireVC: UIViewController {
     @IBOutlet weak var sexPicker: UISegmentedControl!
     @IBOutlet weak var agePicker: UIPickerView!
     @IBOutlet weak var numVisitPicker: UIPickerView!
-    let ages = ["Child (0-16)", "Young Adult (17-22)", "Adult (23-65)", "Senior (65+)"]
+    let ages = ["13-16", "17-22", "23-65", "65+"]
     let days = ["1","2","3","4","5","6","7"]
     var sex: String?
     var age: String?
