@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7938FA8220CAD6FF0093F789 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938FA8120CAD6FF0093F789 /* HistoryVC.swift */; };
+		7938FA8420CADBA30093F789 /* SlideToOpenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938FA8320CADBA30093F789 /* SlideToOpenVC.swift */; };
+		799D9F372113A47B00443008 /* Saved Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D9F362113A47B00443008 /* Saved Workouts.swift */; };
 		79C4339F20ACDF1D00930307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4339E20ACDF1D00930307 /* AppDelegate.swift */; };
 		79C433A120ACDF1D00930307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C433A020ACDF1D00930307 /* ViewController.swift */; };
 		79C433A420ACDF1D00930307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C433A220ACDF1D00930307 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7938FA8120CAD6FF0093F789 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		7938FA8320CADBA30093F789 /* SlideToOpenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToOpenVC.swift; sourceTree = "<group>"; };
+		799D9F362113A47B00443008 /* Saved Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saved Workouts.swift"; sourceTree = "<group>"; };
 		79C4339B20ACDF1D00930307 /* MyGymBagAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGymBagAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C4339E20ACDF1D00930307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C433A020ACDF1D00930307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,11 +113,14 @@
 				79C433A020ACDF1D00930307 /* ViewController.swift */,
 				79C433CC20ACE65600930307 /* QuestionnaireVC.swift */,
 				79C433CE20B358CC00930307 /* SuggestionVC.swift */,
+				799D9F362113A47B00443008 /* Saved Workouts.swift */,
 				79C433D020B5ADA100930307 /* CustomWorkoutCell.swift */,
 				79C433A220ACDF1D00930307 /* Main.storyboard */,
 				79C433A520ACDF1F00930307 /* Assets.xcassets */,
 				79C433A720ACDF1F00930307 /* LaunchScreen.storyboard */,
 				79C433AA20ACDF1F00930307 /* Info.plist */,
+				7938FA8120CAD6FF0093F789 /* HistoryVC.swift */,
+				7938FA8320CADBA30093F789 /* SlideToOpenVC.swift */,
 			);
 			path = MyGymBagAlpha;
 			sourceTree = "<group>";
@@ -265,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799D9F372113A47B00443008 /* Saved Workouts.swift in Sources */,
 				79C433A120ACDF1D00930307 /* ViewController.swift in Sources */,
+				7938FA8420CADBA30093F789 /* SlideToOpenVC.swift in Sources */,
+				7938FA8220CAD6FF0093F789 /* HistoryVC.swift in Sources */,
 				79C433CD20ACE65600930307 /* QuestionnaireVC.swift in Sources */,
 				79C433CF20B358CC00930307 /* SuggestionVC.swift in Sources */,
 				79C4339F20ACDF1D00930307 /* AppDelegate.swift in Sources */,
@@ -443,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPBKF44M5H;
 				INFOPLIST_FILE = MyGymBagAlpha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPBKF44M5H;
 				INFOPLIST_FILE = MyGymBagAlpha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

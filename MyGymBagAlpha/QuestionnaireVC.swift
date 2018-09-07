@@ -32,6 +32,9 @@ class QuestionnaireVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "Logo (1)"))
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+         navigationController?.navigationBar.barTintColor = UIColor(patternImage: UIImage(named: "Background (1)")!)
         agePicker.delegate = self
         agePicker.dataSource = self
         numVisitPicker.delegate = self

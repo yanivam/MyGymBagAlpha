@@ -1,31 +1,33 @@
 //
-//  SuggestionVC.swift
+//  Saved Workouts.swift
 //  MyGymBagAlpha
 //
-//  Created by Yaniv Amiri on 5/21/18.
+//  Created by Yaniv Amiri on 8/2/18.
 //  Copyright © 2018 TGYA. All rights reserved.
 //
 
 import UIKit
-
-class SuggestionVC: UIViewController {
-    var sex: String?
-    var age: String?
-    var numVisits: String?
-    var workouts = ["W0", "W1","W2","W3","W4","W5","W6","W7","W8","W9"]
-    var workoutDescription = ["Test Description", "Test Description", "Test Description", "Test Description", "Test Description", "Test Description", "Test Description","Test Description" ,"Test Description", "Test Description"]
-    @IBOutlet weak var tableView: UITableView!
+class savedWorkoutsVC : UIViewController {
+    
+    var workouts : [String] = [/*"W0", "W1","W2","W3","W4","W5","W6","W7","W8","W9"*/]
+    var workoutDescription : [String] = [/*"Test Description", "Test Description", "Test Description", "Test Description", "Test Description", "Test Description", "Test Description","Test Description" ,"Test Description", "Test Description"*/]
+    @IBOutlet weak var noSavedWorkouts: UILabel!
+    
+    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "Logo (1)"))
-         navigationController?.navigationBar.barTintColor = UIColor(patternImage: UIImage(named: "Background (1)")!)
-        tableView.dataSource = self
-        tableView.delegate = self
+        if workouts.isEmpty {
+            noSavedWorkouts.textColor = UIColor.gray
+            tableview.tintColor = UIColor.clear
+        }
     }
 }
 
-extension SuggestionVC: UITableViewDelegate, UITableViewDataSource {
+
+
+
+extension savedWorkoutsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workouts.count
     }
